@@ -83,4 +83,12 @@ sqrt(sigma_sqr)
 
 # The estimate for $\hat\sigma$ was so small it produced an NaN.  
 
+## Exercise 4
+
+mod <- lm(y ~ x1+x2+x3, data = df)
+paste0("beta0 = ", mod$coefficients[1])
+paste0("beta1 = ", mod$coefficients[2])
+paste0("beta2 = ", mod$coefficients[3])
+paste0("beta3 = ", mod$coefficients[4])
+paste0("sigma = ", sigma(mod))
 
